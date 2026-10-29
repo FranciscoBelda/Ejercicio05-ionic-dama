@@ -1,8 +1,8 @@
 {
   "name": "05-ejercicio-ionic-dama",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Francisco Belda",
+  "homepage": "https://www.youtube.com/@franciscobelda",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
