@@ -1,0 +1,7 @@
+{
+  "name": "05-ejercicio-ionic-dama",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
