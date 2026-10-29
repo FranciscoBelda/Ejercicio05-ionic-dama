@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Service } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ApiResponseZelda } from '../common/models/zelda.model';
+import type { Observable } from 'rxjs';
+
+import type { ApiResponseZelda } from '../common/models/zelda.model';
 
 @Service()
 export class ZeldaService {

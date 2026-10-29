@@ -1,13 +1,15 @@
-import { Component, inject, input, OnInit, signal } from '@angular/core';
-import { ZeldaService } from '../../services/zelda-service';
-import { DataZelda } from '../../common/models/zelda.model';
+import type { OnInit} from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
 import { IonAvatar,
   IonButton, IonButtons,
-  IonCard, IonCardContent, IonContent, IonHeader, IonIcon, IonItem, IonLabel, IonList, IonModal, IonTitle, IonToolbar } from '@ionic/angular';
+  IonCard, IonCardContent, IonContent, IonHeader, IonItem, IonLabel, IonList, IonModal, IonTitle, IonToolbar } from '@ionic/angular';
 import { addIcons } from 'ionicons';
 import { heart, heartHalf, heartOutline } from 'ionicons/icons';
-import {HeartRecoveredComponent} from "../heart-recovered/heart-recovered.component";
+
+import type { DataZelda } from '../../common/models/zelda.model';
+import { ZeldaService } from '../../services/zelda-service';
 import {AttDefComponent} from "../att-def/att-def.component";
+import {HeartRecoveredComponent} from "../heart-recovered/heart-recovered.component";
 
 @Component({
   selector: 'app-load-data-zelda',
@@ -18,7 +20,6 @@ import {AttDefComponent} from "../att-def/att-def.component";
     IonItem,
     IonAvatar,
     IonLabel,
-    IonIcon,
     HeartRecoveredComponent,
     AttDefComponent,
     IonModal,
@@ -57,6 +58,4 @@ export class LoadDataZeldaComponent implements OnInit {
     });
   }
 
-  protected readonly Math = Math;
-  protected readonly Array = Array;
 }

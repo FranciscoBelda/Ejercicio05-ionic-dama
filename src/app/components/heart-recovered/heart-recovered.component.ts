@@ -1,4 +1,4 @@
-import { Component, input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { IonIcon } from '@ionic/angular';
 
 @Component({
@@ -7,11 +7,10 @@ import { IonIcon } from '@ionic/angular';
   styleUrls: ['./heart-recovered.component.scss'],
   imports: [IonIcon],
 })
-export class HeartRecoveredComponent implements OnInit {
+export class HeartRecoveredComponent{
   heartsRecovered = input.required<number | undefined>();
   constructor() {}
 
-  ngOnInit() {}
 
   protected readonly Math = Math;
   protected readonly Array = Array;
